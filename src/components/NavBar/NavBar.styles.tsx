@@ -40,6 +40,11 @@ export const NavBarContainer = styled.div`
       font-weight: 500;
       color: #141010;
 
+      a {
+        text-decoration: none;
+        color: #141010;
+      }
+
       svg {
         margin-left: 5px;
       }

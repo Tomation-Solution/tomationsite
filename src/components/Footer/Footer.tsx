@@ -3,6 +3,7 @@ import { FooterContainer, FooterLower } from "./Footer.styles";
 import { FiFacebook, FiTwitter, FiSearch } from "react-icons/fi";
 import { SlSocialLinkedin } from "react-icons/sl";
 import Logo from "../../assets/Logo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -28,7 +29,7 @@ const Footer = () => {
               <a href="#">Home</a>
             </span>
             <span>
-              <a href="#">About</a>
+              <Link to={"/about-us"}>About</Link>
             </span>
             <span>
               <a href="#">Services</a>
