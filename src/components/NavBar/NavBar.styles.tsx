@@ -96,7 +96,7 @@ export const DropDownContainer = styled.div<{ isOpen: boolean }>`
     flex-direction: column;
     padding: 20px;
     gap: 20px;
-    position: absolute;
+    position: fixed;
     transition: all 0.5s;
     background-color: #fff;
     border-radius: 10px;
