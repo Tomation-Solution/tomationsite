@@ -11,6 +11,7 @@ const NavBarSlider: React.FC<{ show: boolean; closefn: () => void }> = ({
       <div className="nav-items">
         <div className="nav-item">Home</div>
         <div className="nav-item">About Us</div>
+        <div className="nav-item">Our Team</div>
         <div className="nav-item">Services</div>
         <div className="nav-item">Portfolio</div>
         <div className="nav-item">Insight</div>

@@ -1,41 +1,48 @@
 import React from "react";
 import { ReviewsContainer } from "./Reviews.styles";
 import { GlobalHeader } from "../../global/glob-styles";
-import { AiFillStar } from "react-icons/ai";
-import { IoMdQuote } from "react-icons/io";
+import ReviewItem from "./ReviewItem";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+
+import { Pagination } from "swiper";
 
 const Reviews = () => {
   return (
     <ReviewsContainer>
       <GlobalHeader style={{ textAlign: "center" }}>Reviews</GlobalHeader>
-      <div className="review-card">
-        <div className="left">
-          <img alt="" src="" />
-          <h1>John Andy</h1>
-          <p>College student</p>
-          <div>
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-          </div>
-        </div>
-        <div className="right">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aut
-            pariatur, quas deserunt in velit rerum eveniet expedita labore sed
-            quos excepturi quibusdam cupiditate similique quae suscipit rem
-            maiores eius! Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Tempora aut pariatur, quas deserunt in velit rerum eveniet
-            expedita labore sed quos excepturi quibusdam cupiditate similique
-            quae suscipit rem maiores eius!
-          </p>
-        </div>
-        <div className="quote">
-          <IoMdQuote />
-        </div>
-      </div>
+
+      <Swiper
+        className="mySwiper"
+        pagination={true}
+        modules={[Pagination]}
+        spaceBetween={60}
+        grabCursor={true}
+      >
+        <SwiperSlide>
+          <ReviewItem
+            text={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+            }
+            name={"John Andy"}
+            title={"College Student"}
+            starNo={0}
+          />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <ReviewItem
+            text={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+            }
+            name={"John Andy"}
+            title={"College Student"}
+            starNo={0}
+          />
+        </SwiperSlide>
+      </Swiper>
     </ReviewsContainer>
   );
 };

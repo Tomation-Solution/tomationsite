@@ -12,9 +12,10 @@ export const ClientContainer = styled.div`
 export const ClientItemContainer = styled.div`
   width: 300px;
   height: 200px;
-  box-shadow: 0px 8px 10px #d3d3d3;
+  /* box-shadow: 0px 8px 10px #d3d3d3; */
   border-radius: 50px;
   overflow: hidden;
+  margin-bottom: 50px;
 
   img {
     width: 100%;

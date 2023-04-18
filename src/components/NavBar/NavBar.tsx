@@ -4,26 +4,32 @@ import { RxCaretDown, RxHamburgerMenu } from "react-icons/rx";
 import Logo from "../../assets/Logo.png";
 import NavBarSlider from "./NavBarSlider/NavBarSlider";
 import { Link } from "react-router-dom";
+import DropDown from "./DropDown";
 
 const NavBar = () => {
   const [showSlider, setShowSlider] = useState(false);
+  const [aboutDrop, setAboutDrop] = useState(false);
   return (
     <>
       <NavBarSlider
         show={showSlider}
         closefn={() => setShowSlider(!showSlider)}
       />
+      <DropDown show={aboutDrop} />
+
       <NavBarContainer>
         <div className="logo">
-          <img src={Logo} alt="" />
+          <Link to={"/"}>
+            <img src={Logo} alt="" />
+          </Link>
         </div>
 
         <div className="nav-items">
-          <div className="nav-item">Home</div>
           <div className="nav-item">
-            <Link to={"/about-us"}>
-              About Us <RxCaretDown />
-            </Link>
+            <Link to={"/"}>Home</Link>
+          </div>
+          <div className="nav-item" onClick={() => setAboutDrop(!aboutDrop)}>
+            About Us <RxCaretDown />
           </div>
           <div className="nav-item">Services</div>
           <div className="nav-item">Portfolio</div>

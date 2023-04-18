@@ -26,7 +26,7 @@ const Footer = () => {
           <div className="link-section">
             <h4>Company</h4>
             <span>
-              <a href="#">Home</a>
+              <Link to={"/"}>Home</Link>
             </span>
             <span>
               <Link to={"/about-us"}>About</Link>

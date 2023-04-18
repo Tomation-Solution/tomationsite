@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavBar from "../components/NavBar/NavBar";
 import Intro from "../components/Intro/Intro";
 import HomeIntro from "../components/Intro/HomeIntro/HomeIntro";
@@ -11,6 +11,10 @@ import Client from "../components/Client/Client";
 import Footer from "../components/Footer/Footer";
 
 const HomePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <NavBar />
@@ -20,6 +24,7 @@ const HomePage = () => {
       <TextImageBanner
         header="Who We Are"
         description="Tomation Solutions is a tech solution provider set up with the sole aim of the development of tech solutions that meets the needs of businesses as well as individuals creating ease around human existence."
+        where="/about-us"
         btnText="More About Us"
         reversed={true}
       >
@@ -27,7 +32,7 @@ const HomePage = () => {
       </TextImageBanner>
       <TextImageBanner
         header="What We Offer"
-        description="We provides for all the required skill sets for an upwardly mobile tech development business."
+        description="We provide bespoke technology solutions for upwardly mobile businesses and non-profit making organisations."
         btnText="More Services"
         reversed={false}
       >

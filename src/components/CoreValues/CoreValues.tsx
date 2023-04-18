@@ -17,31 +17,31 @@ const CoreValues = () => {
   return (
     <CoreValuesContainer>
       <GlobalHeader style={{ textAlign: "center" }}>
-        Our Core Values
+        Rating Outcomes
       </GlobalHeader>
       <div className="core-value-items ">
         <CoreValuesItem
           image={CoreValuesSummary1}
           header={"100+"}
-          description={"Excellence Service Delivery"}
+          description={"Happy Clients"}
           backimage={Vector1}
         />
         <CoreValuesItem
           image={CoreValuesSummary2}
           header={"200+"}
-          description={"Passion"}
+          description={"IT Services and Consulting"}
           backimage={Vector2}
         />
         <CoreValuesItem
           image={CoreValuesSummary3}
           header={"300+"}
-          description={"Integrity"}
+          description={"Project Delivered"}
           backimage={Vector3}
         />
         <CoreValuesItem
           image={CoreValuesSummary4}
           header={"8000+"}
-          description={"Constant Innovation"}
+          description={"Development Hours"}
           backimage={Vector4}
         />
       </div>

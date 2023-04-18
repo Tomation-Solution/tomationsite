@@ -27,11 +27,12 @@ export const PortfolioItemContainer = styled.div`
   overflow: hidden;
   border: 2px solid transparent;
   cursor: pointer;
+  transition: all 0.3s ease-in;
 
-  box-shadow: 0px 5px 8px #d3d3d3;
+  /* box-shadow: 0px 5px 8px #d3d3d3; */
 
   &:hover {
-    border: 2px solid skyblue;
+    transform: scale(1.1);
   }
 
   img {

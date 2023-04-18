@@ -23,8 +23,8 @@ export const CoreValueItemContainer = styled.div`
   position: relative;
 
   img {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
     position: relative;
     z-index: 1;
@@ -39,11 +39,11 @@ export const CoreValueItemContainer = styled.div`
   }
 
   .description {
-    background-color: #fff;
+    background-color: transparent;
     border-radius: 10px;
     padding: 20px;
-    font-size: 14px;
-    color: #024d60;
+    font-size: 16px;
+    color: #000;
     text-align: center;
     font-weight: 700;
   }

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const GlobalButton = styled.button`
+export const GlobalButton = styled.button<{ styleTypex: string }>`
   padding: 10px;
   border-radius: 50px;
   font-weight: 500;
@@ -15,7 +15,8 @@ export const GlobalButton = styled.button`
   &:hover {
     color: #024d60;
     border: 1px solid #024d60;
-    background-color: transparent;
+    background-color: ${(props) =>
+      props.styleTypex === "bright" ? "#fff" : "transparent"};
     transform: scale(1.05);
   }
 `;

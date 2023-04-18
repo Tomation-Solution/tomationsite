@@ -25,6 +25,7 @@ export const NavBarContainer = styled.div`
       object-fit: contain;
       width: 100%;
       height: 100%;
+      cursor: pointer;
     }
   }
 
@@ -86,5 +87,45 @@ export const NavBarContainer = styled.div`
     ${Laptop({
       display: "block",
     })}
+  }
+`;
+
+export const DropDownContainer = styled.div<{ isOpen: boolean }>`
+  .dropdown-items {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    position: absolute;
+    transition: all 0.5s;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 200px;
+    transform: ${(props) =>
+      props.isOpen ? "translateY(0%)" : "translateY(-500%)"};
+    left: 50%;
+    top: 20%;
+    z-index: 30;
+
+    ${Laptop({
+      display: "none",
+    })}
+
+    .dropdown-item {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      color: #6f6c90;
+
+      a {
+        text-decoration: none;
+        color: #6f6c90;
+      }
+
+      svg {
+        margin-left: 5px;
+      }
+    }
   }
 `;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavBar from "../components/NavBar/NavBar";
 import Footer from "../components/Footer/Footer";
 import Intro from "../components/Intro/Intro";
@@ -10,6 +10,9 @@ import CoreValues from "../components/CoreValues/CoreValues";
 import OurTeam from "../components/TextImageBanner/About/OurTeam/OurTeam";
 
 const AboutUsPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <NavBar />
@@ -56,6 +59,7 @@ const AboutUsPage = () => {
         description={
           "Our team of experts provides for all the required skill sets for an upwardly mobile tech development business. Apt attentions are paid to our development via the application of the agile methodology from ideation to product launch."
         }
+        where="/our-team"
         btnText={"Meet the Team"}
       >
         <OurTeam />

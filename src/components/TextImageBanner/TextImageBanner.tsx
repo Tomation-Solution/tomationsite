@@ -1,6 +1,7 @@
 import React from "react";
 import { TextImageBannerContainer } from "./TextImageBanner.styles";
 import Button from "../../global/Button/Button";
+import { Link } from "react-router-dom";
 
 type Props = {
   reversed: boolean;
@@ -8,6 +9,8 @@ type Props = {
   description: string | string[];
   btnText: string;
   larger?: boolean;
+  where?: string;
+  openfn?: () => void;
 };
 
 const TextImageBanner = ({
@@ -17,6 +20,8 @@ const TextImageBanner = ({
   description,
   btnText,
   larger,
+  where,
+  openfn,
 }: React.PropsWithChildren<Props>) => {
   return (
     <TextImageBannerContainer isReversed={reversed}>
@@ -31,7 +36,15 @@ const TextImageBanner = ({
         ) : (
           <p>{description}</p>
         )}
-        {btnText ? <Button>{btnText}</Button> : null}
+        {btnText ? (
+          openfn ? (
+            <Button clickfn={openfn}>{btnText}</Button>
+          ) : (
+            <Link to={where as string}>
+              <Button>{btnText}</Button>
+            </Link>
+          )
+        ) : null}
       </div>
 
       {children}

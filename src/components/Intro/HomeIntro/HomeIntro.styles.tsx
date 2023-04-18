@@ -10,6 +10,7 @@ export const HomePageContainer = styled.div`
 
   ${tablet({
     flexDirection: "column",
+    paddingTop: "80px",
   })}
 
   .text-section {

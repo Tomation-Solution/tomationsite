@@ -8,7 +8,9 @@ type Props = {
 const PortfolioItem: React.FC<Props> = ({ image }) => {
   return (
     <PortfolioItemContainer>
-      <img alt="" src="" />
+      <a href="" rel="noreferer">
+        <img alt="" src={image} />
+      </a>
     </PortfolioItemContainer>
   );
 };
