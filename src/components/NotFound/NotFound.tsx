@@ -1,16 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import { seqBlue100, seqLightBlue } from "../../globals/colors";
 
 const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: ${seqBlue100};
+  color: #024d60;
   height: 100vh;
   overflow: hidden;
-  background-color: ${seqLightBlue};
+  background-color: #e6edef;
 `;
 const Header = styled.span`
   font-size: 40px;
