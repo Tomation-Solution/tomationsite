@@ -16,14 +16,14 @@ const Portfolio = () => {
       <GlobalHeader style={{ textAlign: "center" }}>Portfolio</GlobalHeader>
       <div className="portfolio-items">
         {[
-          Portfolio1,
-          Portfolio2,
-          Portfolio3,
-          Portfolio4,
-          Portfolio5,
-          Portfolio6,
+          { image: Portfolio1, link: "https://mutual-alliance.netlify.app/" },
+          { image: Portfolio2, link: "/" },
+          { image: Portfolio3, link: "https://www.emetricsuite.com/" },
+          { image: Portfolio4, link: "/" },
+          { image: Portfolio5, link: "/" },
+          { image: Portfolio6, link: "https://nb-chambers.netlify.app/" },
         ].map((item, index) => (
-          <PortfolioItem image={item} key={index} />
+          <PortfolioItem image={item.image} link={item.link} key={index} />
         ))}
       </div>
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { NavBarSliderContainer } from "./NavBarSlider.styles";
 import { GrFormClose } from "react-icons/gr";
+import { Link } from "react-router-dom";
 
 const NavBarSlider: React.FC<{ show: boolean; closefn: () => void }> = ({
   show,
@@ -9,9 +10,19 @@ const NavBarSlider: React.FC<{ show: boolean; closefn: () => void }> = ({
   return (
     <NavBarSliderContainer isOpen={show}>
       <div className="nav-items">
-        <div className="nav-item">Home</div>
-        <div className="nav-item">About Us</div>
-        <div className="nav-item">Our Team</div>
+        <div className="nav-item">
+          <Link to={"/"}>Home</Link>
+        </div>
+        <div className="nav-item">
+          <Link to={"/about-us"}>About Us</Link>
+        </div>
+        <div className="nav-item">
+          <Link to={"/our-team"}></Link>
+          Our Team
+        </div>
+        <div className="nav-item">
+          <Link to={"/blog"}>Blog</Link>
+        </div>
         <div className="nav-item">Services</div>
         <div className="nav-item">Portfolio</div>
         <div className="nav-item">Insight</div>

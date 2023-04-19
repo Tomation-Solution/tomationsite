@@ -22,6 +22,11 @@ export const NavBarSliderContainer = styled.div<{ isOpen: boolean }>`
       font-weight: 500;
       cursor: pointer;
       text-transform: uppercase;
+
+      a {
+        text-decoration: none;
+        color: #141010;
+      }
     }
   }
 

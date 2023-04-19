@@ -32,6 +32,9 @@ const NavBar = () => {
             About Us <RxCaretDown />
           </div>
           <div className="nav-item">Services</div>
+          <div className="nav-item">
+            <Link to={"/blog"}>Blog</Link>
+          </div>
           <div className="nav-item">Portfolio</div>
           <div className="nav-item">Insight</div>
           <div className="nav-item">Contact Us</div>
