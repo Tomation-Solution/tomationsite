@@ -27,6 +27,7 @@ const HomePage = () => {
         where="/about-us"
         btnText="More About Us"
         reversed={true}
+        larger={true}
       >
         <WhoAreWe />
       </TextImageBanner>
@@ -35,6 +36,7 @@ const HomePage = () => {
         description="We provide bespoke technology solutions for upwardly mobile businesses and non-profit making organisations."
         btnText="More Services"
         reversed={false}
+        larger={true}
       >
         <WhatWeOffer />
       </TextImageBanner>

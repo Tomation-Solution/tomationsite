@@ -6,6 +6,7 @@ import TeamPage from "./pages/TeamPage";
 import NotFound from "./components/NotFound/NotFound";
 import BlogPage from "./pages/BlogPage";
 import SingleBlogPage from "./pages/SingleBlogPage";
+import ServicesPage from "./pages/ServicesPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/our-team" element={<TeamPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/:id" element={<SingleBlogPage />} />
+        <Route path="/services" element={<ServicesPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

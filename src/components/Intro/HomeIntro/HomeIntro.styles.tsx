@@ -39,6 +39,10 @@ export const HomePageContainer = styled.div`
     display: flex;
     padding: 80px 0px;
 
+    ${Laptop({
+      padding: "30px 0px",
+    })}
+
     img {
       width: 300px;
       object-fit: contain;

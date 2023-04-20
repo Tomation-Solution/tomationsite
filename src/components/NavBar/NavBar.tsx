@@ -5,12 +5,15 @@ import Logo from "../../assets/Logo.png";
 import NavBarSlider from "./NavBarSlider/NavBarSlider";
 import { Link } from "react-router-dom";
 import DropDown from "./DropDown";
+import GetStarted from "../GetStarted/GetStarted";
 
 const NavBar = () => {
   const [showSlider, setShowSlider] = useState(false);
   const [aboutDrop, setAboutDrop] = useState(false);
+  const [letsStart, setLetsStart] = useState(false);
   return (
     <>
+      <GetStarted closefn={() => setLetsStart(!letsStart)} show={letsStart} />
       <NavBarSlider
         show={showSlider}
         closefn={() => setShowSlider(!showSlider)}
@@ -32,13 +35,14 @@ const NavBar = () => {
             About Us <RxCaretDown />
           </div>
           <div className="nav-item">Services</div>
-          <div className="nav-item">
-            <Link to={"/blog"}>Blog</Link>
-          </div>
           <div className="nav-item">Portfolio</div>
-          <div className="nav-item">Insight</div>
+          <div className="nav-item">
+            <Link to={"/blog"}>Insight</Link>
+          </div>
           <div className="nav-item">Contact Us</div>
-          <div className="nav-btn">Get Started</div>
+          <div className="nav-btn" onClick={() => setLetsStart(!letsStart)}>
+            Get Started
+          </div>
         </div>
 
         <div className="hamburger">

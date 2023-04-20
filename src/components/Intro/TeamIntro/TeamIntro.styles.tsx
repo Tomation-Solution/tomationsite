@@ -1,12 +1,11 @@
 import styled from "styled-components";
 import { globalPadding } from "../../../global/glob-styles";
-import { tablet } from "../../../responsive";
+import { mobileSm, tablet } from "../../../responsive";
 
 export const TeamIntroContainer = styled.div`
   display: flex;
   ${globalPadding}
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
   color: #141010;
   gap: 30px;
   align-items: center;
@@ -21,6 +20,12 @@ export const TeamIntroContainer = styled.div`
       height: 400px;
       object-fit: contain;
       border-radius: 50%;
+    }
+
+    .service-img {
+      ${mobileSm({
+        width: "100%",
+      })}
     }
   }
   .text-section {

@@ -1,0 +1,26 @@
+ .nav button{
+    background-color:#024D60;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+ }
+.nav{
+    
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: center;
+}
+.nav img{
+    width:10%;
+    cursor: pointer;
+}
+.nav p{
+    font-weight: 600;
+    cursor: pointer;
+    
+}

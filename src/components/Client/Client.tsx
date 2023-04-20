@@ -50,9 +50,6 @@ const Client = () => {
             <ClientItem image={Client3} />
           </SwiperSlide>
           <SwiperSlide>
-            <ClientItem image={Client4} />
-          </SwiperSlide>
-          <SwiperSlide>
             <ClientItem image={Client5} />
           </SwiperSlide>
           <SwiperSlide>
@@ -77,7 +74,7 @@ const Client = () => {
             <ClientItem image={Client12} />
           </SwiperSlide>
           <SwiperSlide>
-            <ClientItem image={Client3} />
+            <ClientItem image={Client13} />
           </SwiperSlide>
           <SwiperSlide>
             <ClientItem image={Client14} />

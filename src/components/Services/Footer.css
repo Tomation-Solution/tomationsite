@@ -1,0 +1,79 @@
+ .Footer{
+   
+    width: 100%; 
+    background: #E6EDEF;
+    margin-bottom: 10px;
+    margin-top: 100px;
+   
+    
+  
+  
+} 
+
+.Footer .logoform{
+    /* border: 1px solid blue; */
+    width: 30%;
+}
+.Footer .logoform  .socials{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+
+    
+}
+
+.Footer .logoform  .socials img{
+    width: 20%;
+ 
+    /* border: 1px solid red   ; */
+}
+.Footer .logoform input{
+    padding: 10px;
+    background: #FEFEFE;
+    border-radius: 30px;    
+    border: none;
+    width: 80%;
+}
+.Footer .logoform .Products{
+    width: 20%;
+   
+}
+
+.top{
+    display: flex;
+     
+    max-width: 900px;
+
+    padding: 10px;
+    text-align: left;
+    
+    
+    justify-content: space-between;
+}
+
+.Footer .line{
+    border: 1px solid #024D60;
+    top: 467px;
+
+
+}
+.Footer .under img {
+    width: 30%;
+    
+    margin-left: 35%;
+}
+
+.Footer .container{
+   
+    margin: 0 auto;
+    padding: 10px;  
+    text-align: left;
+    max-width: 900px;
+
+}
+    
+  

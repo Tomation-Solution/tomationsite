@@ -1,0 +1,84 @@
+.Service4{
+    
+    display: flex;
+    align-items: baseline;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 100px;
+    justify-content: space-between;
+    text-emphasis: center;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.Service4 .FAQ h1{
+    color: #024D60;
+    flex: none;
+}
+
+.Service4 .FAQ button{
+   background-color:#024D60;
+   border-radius: 30px;
+   padding: 10px;
+   border: none;
+   color: white;
+   cursor: pointer;
+    
+
+}
+.Service4 .questions{
+    width: 50%;
+    text-align: left;
+}
+.Service4 .questions .deep{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Service4 .questions .deep img{
+    width: 5%;
+    /* margin-left: 5px; */
+    cursor: pointer;
+}
+.Service4 .FAQ{
+    width: 40%;
+    text-align: left;
+}
+
+
+
+
+.Service4 .questions .line{
+    width: 100;
+    height: 0px;
+    border: 1px solid #C2C2C2;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+@media screen and (max-width: 500px) {
+    .Service4{
+        padding-left: 30px;
+        padding-right: 30px;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .Service4 .FAQ{
+        width: 100%;
+    }
+    .Service4 .questions{
+        width: 90%;
+        padding: 16px;
+
+        text-align: left;
+    }
+    
+    
+}
+
+
+    

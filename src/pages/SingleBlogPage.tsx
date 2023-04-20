@@ -28,6 +28,7 @@ const SingleBlogPage = () => {
     () => publicRequest.get(`blog/blog-view/${id}`),
     {
       select: (data) => data.data,
+      refetchOnWindowFocus: false,
     }
   );
   return (

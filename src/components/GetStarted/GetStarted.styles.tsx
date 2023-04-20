@@ -9,7 +9,7 @@ export const GetStartedContainer = styled.div<{ isOpen: boolean }>`
   padding: 20px;
   overflow-y: auto;
   position: fixed;
-  z-index: 10;
+  z-index: 40;
   transition: all 0.5s;
   transform: ${(props) =>
     props.isOpen ? "translateY(0%)" : "translateY(-500%)"};
@@ -33,7 +33,7 @@ export const GetStartedContainer = styled.div<{ isOpen: boolean }>`
   }
 
   ${tablet({
-    width: "50vw",
+    width: "90vw",
   })}
 
   input {

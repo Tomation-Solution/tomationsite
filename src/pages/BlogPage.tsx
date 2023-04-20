@@ -29,6 +29,7 @@ const BlogPage = () => {
       ),
     {
       select: (data) => data.data,
+      refetchOnWindowFocus: false,
     }
   );
 

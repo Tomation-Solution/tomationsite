@@ -1,0 +1,69 @@
+.Service3 {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #e6edef;
+  margin: 50px 0px;
+  padding: 50px 0px;
+}
+
+.Service3 .ways {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 50px 0px;
+}
+
+.Service3 h1 {
+  color: #024d60;
+}
+.Service3 h3 {
+  color: #024d60;
+}
+.Service3 .container {
+  padding: 0px 30px;
+  max-width: 900px;
+  margin: 0 auto;
+
+  gap: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .Service3 {
+    width: 100%;
+  }
+
+  .Service3 .ways {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .Service3 .container {
+    width: 100%;
+
+    margin: 0 auto;
+
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Service3 {
+    width: 100%;
+  }
+
+  .Service3 .ways {
+    grid-template-columns: 1fr;
+  }
+  .Service3 .container {
+    width: 100%;
+
+    margin: 0 auto;
+
+    gap: 20px;
+  }
+
+  .numeral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
