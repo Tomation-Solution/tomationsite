@@ -12,7 +12,7 @@ const HomeIntro = () => {
   return (
     <>
       <GetStarted closefn={() => setLetsStart(!letsStart)} show={letsStart} />
-      <HomePageContainer>
+      <HomePageContainer isNotPadded={true}>
         <section className="text-section">
           <h1>Best Solutions that Meets your Needs</h1>
           <h4>Get the best tech solutions to make creating ease possible.</h4>

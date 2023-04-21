@@ -21,6 +21,7 @@ const AboutUsPage = () => {
           reversed={true}
           header={"About Us"}
           larger={true}
+          isNotMargin={true}
           description={[
             "Tomation Solutions is a tech solution provider set up with the sole aim of the development of tech solutions that meets the needs of businesses as well as individuals creating ease around human existence.",
             "We pride ourselves to be an emerging industry leader within our operational scope. Aside from the provision of off the shelf solutions towards meeting needs and solving problems, we also undertake projects aimed at the development of bescope solutions.",

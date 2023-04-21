@@ -20,6 +20,10 @@ export const TeamIntroContainer = styled.div`
       height: 400px;
       object-fit: contain;
       border-radius: 50%;
+
+      ${mobileSm({
+        width: "100%",
+      })}
     }
 
     .service-img {

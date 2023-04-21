@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Laptop, mobile, mobileSm, tablet } from "../../../responsive";
 import { globalPadding } from "../../../global/glob-styles";
 
-export const HomePageContainer = styled.div`
+export const HomePageContainer = styled.div<{ isNotPadded: boolean }>`
   display: flex;
   gap: 30px;
   ${globalPadding}
@@ -37,7 +37,7 @@ export const HomePageContainer = styled.div`
     flex: 1;
     position: relative;
     display: flex;
-    padding: 80px 0px;
+    padding: ${(props) => (props.isNotPadded ? "20px 0px" : "80px 0px")};
 
     ${Laptop({
       padding: "30px 0px",

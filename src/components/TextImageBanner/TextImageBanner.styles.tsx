@@ -2,12 +2,15 @@ import styled from "styled-components";
 import { globalPadding } from "../../global/glob-styles";
 import { mobile, tablet } from "../../responsive";
 
-export const TextImageBannerContainer = styled.div<{ isReversed: boolean }>`
+export const TextImageBannerContainer = styled.div<{
+  isReversed: boolean;
+  isNoMargin?: boolean;
+}>`
   ${globalPadding}
   display: flex;
   align-items: center;
   flex-direction: ${(props) => (props.isReversed ? "row-reverse" : "row")};
-  margin: 80px 0px;
+  margin: ${(props) => (props.isNoMargin ? "" : "80px 0px")};
   justify-content: space-between;
   gap: 30px;
 

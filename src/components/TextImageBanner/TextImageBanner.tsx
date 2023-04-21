@@ -11,6 +11,7 @@ type Props = {
   larger?: boolean;
   where?: string;
   openfn?: () => void;
+  isNotMargin?: boolean;
 };
 
 const TextImageBanner = ({
@@ -22,19 +23,24 @@ const TextImageBanner = ({
   larger,
   where,
   openfn,
+  isNotMargin,
 }: React.PropsWithChildren<Props>) => {
   return (
-    <TextImageBannerContainer isReversed={reversed}>
+    <TextImageBannerContainer isReversed={reversed} isNoMargin={isNotMargin}>
       <div className="text-section">
         {larger ? (
-          <h1 style={{ fontSize: "40px" }}>{header}</h1>
+          <h1 style={{ fontSize: "50px" }}>{header}</h1>
         ) : (
           <h1>{header}</h1>
         )}
         {Array.isArray(description) ? (
-          description.map((item, index) => <p key={index}>{item}</p>)
+          description.map((item, index) => (
+            <p style={{ fontSize: "20px" }} key={index}>
+              {item}
+            </p>
+          ))
         ) : (
-          <p>{description}</p>
+          <p style={{ fontSize: "20px" }}>{description}</p>
         )}
         {btnText ? (
           openfn ? (

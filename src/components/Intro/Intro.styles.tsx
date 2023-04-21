@@ -4,7 +4,7 @@ export const IntroContainer = styled.section`
   margin-top: 104px;
   background-color: #e6edef;
 
-  svg {
+  /* svg {
     margin-bottom: -10px;
-  }
+  } */
 `;

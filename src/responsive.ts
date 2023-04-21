@@ -42,7 +42,7 @@ export const Desktop = (props: CSSProp) => {
 
 export const K4 = (props: CSSProp) => {
   return css`
-    @media (min-width: 2560px) {
+    @media (min-width: 1600px) {
       ${props}
     }
   `;

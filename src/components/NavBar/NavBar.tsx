@@ -34,7 +34,9 @@ const NavBar = () => {
           <div className="nav-item" onClick={() => setAboutDrop(!aboutDrop)}>
             About Us <RxCaretDown />
           </div>
-          <div className="nav-item">Services</div>
+          <div className="nav-item">
+            <Link to={"/services"}>Services</Link>
+          </div>
           <div className="nav-item">Portfolio</div>
           <div className="nav-item">
             <Link to={"/blog"}>Insight</Link>
