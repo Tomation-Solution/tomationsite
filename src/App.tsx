@@ -12,7 +12,7 @@ import { useEffect } from "react";
 function App() {
   useEffect(()=>{
     console.log('Loaded')
-    if(window.location.hostname ==='tomationsolutions.com'){
+    if(window.location.hostname ==='tomationsolutions.com'||window.location.hostname==='www.tomationsolutions.com'){
       window.location.href='https://www.tomationng.com'
     }
   },[])
