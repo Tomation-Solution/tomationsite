@@ -13,7 +13,7 @@ function App() {
   useEffect(()=>{
     console.log('Loaded')
     if(window.location.hostname ==='tomationsolutions.com'){
-      window.location.href='https://www.tomationsolutionsng.com'
+      window.location.href='https://www.tomationng.com'
     }
   },[])
   return (
