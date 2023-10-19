@@ -7,8 +7,15 @@ import NotFound from "./components/NotFound/NotFound";
 import BlogPage from "./pages/BlogPage";
 import SingleBlogPage from "./pages/SingleBlogPage";
 import ServicesPage from "./pages/ServicesPage";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(()=>{
+    console.log('Loaded')
+    if(window.location.hostname ==='tomationsolutions.com'){
+      window.location.href='https://www.tomationsolutionsng.com'
+    }
+  },[])
   return (
     <BrowserRouter>
       <Routes>
